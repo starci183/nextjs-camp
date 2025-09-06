@@ -1,12 +1,19 @@
 "use client"
-import React from "react"
-import { Children2 } from "./Children2"
+import React from "react"   
+import { FormExample } from "./FormExample"
+import LoginModal from "./LoginModal"
+import SignUpModal from "./SignUpModal"
 //import { useAppDispatch, setCarrot } from "./redux"
 
 export default function Home() {
     return (
         <div>
-            <Children2/>
+            <FormExample/>
+            
+            <div>
+                <LoginModal/>
+                <SignUpModal/>
+            </div>
         </div>
     )
 }
