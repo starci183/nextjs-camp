@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import { EyeIcon } from "@phosphor-icons/react"
 import { useFormik } from "formik"
 import * as Yup from "yup"
-import App from "../LoginModal"
+import App from "../../components/modals/LoginModal"
 import { useLoginDiscloresureSingleton } from "@/hooks"
 import { NestedComponent } from "./NestedComponent"
 

@@ -1,19 +1,16 @@
 "use client"
 import React from "react"   
-import { FormExample } from "./FormExample"
-import LoginModal from "./LoginModal"
-import SignUpModal from "./SignUpModal"
 //import { useAppDispatch, setCarrot } from "./redux"
+import { getDateString } from "@/modules"
+import { RefreshPikachuButton } from "./RefreshPikachuButton"
+import { RenderPikachu } from "./RenderPikachu"
 
 export default function Home() {
     return (
         <div>
-            <FormExample/>
-            
-            <div>
-                <LoginModal/>
-                <SignUpModal/>
-            </div>
+            <RefreshPikachuButton />
+            <RenderPikachu />
+            {getDateString()}
         </div>
     )
 }

@@ -1,5 +1,5 @@
 "use client"
-import { DiscloresureProvider } from "@/hooks"
+import { DiscloresureProvider, SwrProvider } from "@/hooks"
 // nextjs client side component
 // server side component
 // giai thich sau, phai hieu ve rendering
@@ -9,7 +9,9 @@ export function Providers({children}: { children: React.ReactNode }) {
     return (
         <HeroUIProvider>
             <DiscloresureProvider>
-                {children}
+                <SwrProvider>
+                    {children}
+                </SwrProvider>
             </DiscloresureProvider>
         </HeroUIProvider>
     )

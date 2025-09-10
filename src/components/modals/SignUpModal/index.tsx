@@ -1,3 +1,4 @@
+"use client"
 import { useSignUpDiscloresureSingleton } from "@/hooks";
 import {
     Modal,
@@ -10,7 +11,7 @@ import {
     Input,
   } from "@heroui/react";
   
-  export default function SignUpModal() {
+  export function SignUpModal() {
     const { isOpen, onOpen, onOpenChange, onClose } = useSignUpDiscloresureSingleton()
   
     return (
